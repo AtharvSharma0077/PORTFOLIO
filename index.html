@@ -9,15 +9,15 @@
 /* ===== RESET & BASE ===== */
 *{margin:0;padding:0;box-sizing:border-box;}
 :root{
-  --bg:#0a0a0f;
-  --bg2:#0f0f18;
+  --bg:#0bb67a;
+  --bg2:#066a8e;
   --bg3:#13131f;
   --card:#141422;
-  --border:#1e1e35;
+  --border:#985ec5;
   --border2:#2a2a4a;
   --accent:#7b6ef6;
   --accent2:#a78bfa;
-  --green:#34d399;
+  --green:#074736;
   --white:#f0f0ff;
   --muted:#7070a0;
   --light:#b0b0d0;
@@ -161,13 +161,7 @@ nav{
   text-decoration:none;letter-spacing:1px;
   transition:color 0.2s;
 }
-.hero-socials a:hover{color:var(--accent);}
-.scroll-hint{
-  position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);
-  z-index:1;display:flex;flex-direction:column;align-items:center;gap:8px;
-  color:var(--muted);font-size:0.75rem;font-family:var(--mono);
-  animation:float 2s ease-in-out infinite;
-}
+
 @keyframes float{0%,100%{transform:translateX(-50%) translateY(0);}50%{transform:translateX(-50%) translateY(-8px);}}
 .scroll-hint::after{content:'';width:1px;height:40px;background:linear-gradient(var(--accent),transparent);}
  
